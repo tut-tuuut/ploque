@@ -509,19 +509,57 @@ table {
 #global-wrap {
     width: 800px;
     margin: 0 auto;
-    padding: 15px 0;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    padding: 1px 0;
+    background: rgba(255,255,255,0.8);
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 #global-wrap > * {
     padding-left: 15px;
     padding-right: 15px;
 }
 #global-wrap > h2 {
-    border-top: 1px solid #000;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    background: #fff;
+    border-width: 1px 0;
+    margin: 0.5em -1em;
+}
+#global-wrap > h3 {
+    background: #fff;
     border-bottom: 1px solid #000;
-    padding: 0.5em;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    display: inline-block;
+    margin: 0 -1px 1em;
+    padding: 0.5em 1.5em;
 }
 #global-wrap > ul > li {
     margin: 0 15px;
+}
+#global-wrap > dl > dt {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin-left: -15px;
+    padding: 0 2em;
+}
+#global-wrap > dl > dd {
+    margin: 10px 10px 10px 40px;
+}
+.vcard::after {
+    content: ' ';
+    display: block;
+    height: 1px;
+    clear: both;
+}
+.vcard > div {
+    float: left;
+    width: 30%;
+}
+.vcard > div + div {
+    border-left: 1px solid #000;
+    padding-left: 5px;
+}
+dd ul {
+    padding: 0;
 }
