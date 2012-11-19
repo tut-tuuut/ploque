@@ -592,6 +592,7 @@ a:hover {
 .vcard > div {
     display: table-cell;
     padding: 5px;
+    width: 30%;
 }
 .vcard > div + div {
     border-left: 1px solid #000;
